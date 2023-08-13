@@ -1,0 +1,16 @@
+{
+  "name": "roman_to_integer_solution_v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "keywords": [
+    "Hash Table",
+    "Math",
+    "String"
+  ],
+  "author": "Neisser",
+  "license": "ISC"
+}
