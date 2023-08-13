@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "test": "jest",
+    "start": "node index.js",
+    "lint": "npx eslint index.js"
   },
   "keywords": [
     "Hash Table",
@@ -12,5 +14,11 @@
     "String"
   ],
   "author": "Neisser",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.47.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.0",
+    "jest": "^29.6.2"
+  }
 }
