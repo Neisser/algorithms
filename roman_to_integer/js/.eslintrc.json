@@ -10,6 +10,7 @@
     "parserOptions": {
         "ecmaVersion": "latest"
     },
+    "ignorePatterns": ["**/__tests__/**", "**/*.test.js"],
     "rules": {
     }
 }
