@@ -6,7 +6,7 @@
  * @returns {number[]} - An array containing the indices of the two numbers that add up to the target.
  * @throws {Error} - If no such pair is found.
  */
-var twoSum = function(nums, target) {
+const twoSum = (nums, target) => {
   /**
    * A hash table to store the indices of numbers along with their complements.
    * @type {Object<number, number>}
@@ -14,15 +14,19 @@ var twoSum = function(nums, target) {
   const ht = {};
 
   for (let index = 0; index < nums.length; index++) {
-      const num = nums[index];
+    const num = nums[index];
 
-      if (typeof ht[num] !== "undefined") {
-          return [ht[num], index];
-      }
+    if (typeof ht[num] !== "undefined") {
+      return [ht[num], index];
+    }
 
-      const inverse = target - num;
-      ht[inverse] = index;
+    const inverse = target - num;
+    ht[inverse] = index;
   }
 
   throw new Error("No solution found");
+};
+
+module.exports = {
+  twoSum,
 };
