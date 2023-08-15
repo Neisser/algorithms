@@ -43,5 +43,4 @@ Output: [0,1]
 ## Related topics
 
 - Hash Table
-- Math
-- String
+- Array
