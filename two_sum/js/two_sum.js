@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 /**
  * Finds two numbers in an array that add up to a given target.
  *
@@ -13,10 +14,10 @@ const twoSum = (nums, target) => {
    */
   const ht = {};
 
-  for (let index = 0; index < nums.length; index++) {
+  for (let index = 0; index < nums.length; index += 1) {
     const num = nums[index];
 
-    if (typeof ht[num] !== "undefined") {
+    if (typeof ht[num] !== 'undefined') {
       return [ht[num], index];
     }
 
@@ -24,7 +25,7 @@ const twoSum = (nums, target) => {
     ht[inverse] = index;
   }
 
-  throw new Error("No solution found");
+  throw new Error('No solution found');
 };
 
 module.exports = {
